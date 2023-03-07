@@ -9,7 +9,27 @@ import Social from "./social";
 import Card from "./card";
 import Footer from "./footer";
 import landing_background from '../assets/images/landing_background.webp';
+import product1 from '../assets/images/product1.webp';
+import product2 from '../assets/images/product2.webp';
+import product3 from '../assets/images/product3.webp';
+import product4 from '../assets/images/product4.jpg';
+import product5 from '../assets/images/product5.jpg';
+import product6 from '../assets/images/product6.webp';
+import product7 from '../assets/images/product7.jpg';
+import product8 from '../assets/images/product8.jpg';
+import product9 from '../assets/images/product9.jpg';
   const Login = () => {
+    const Users=[
+      {src:product1},
+      {src:product2},
+      {src:product3},
+      {src:product4},
+      {src:product5},
+      {src:product6},
+      {src:product7},
+      {src:product8},
+      {src:product9},
+    ]
     const filterToggle=()=>{
       var x = document.getElementById("filterMain");
       if (x.style.display === "none") {
@@ -45,7 +65,11 @@ import landing_background from '../assets/images/landing_background.webp';
           <div className='w-760 sm:ml-2 flex flex-col'>
             <img className='w-full mt-3 hidden md:block' src={landing_background}></img>
             <div className='flex flex-wrap'>
-              <Product />
+            {Users.map((e)=>{
+       return (
+        <Product src={e.src} />
+     );})}
+            
             </div>
               <Pagination />
           </div>
