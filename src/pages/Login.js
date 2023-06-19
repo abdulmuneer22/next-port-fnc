@@ -64,6 +64,7 @@ import product9 from '../assets/images/product9.jpg';
           <Filters />
           <div className='w-760 sm:ml-2 flex flex-col'>
             <img className='w-full mt-3 hidden md:block' src={landing_background}></img>
+            <div className='flex border border-gray-400 bg-gray-200 p-2 text-xs'>His fragrance empire began in 1992, when he released his first signature scent, Gianni Versace. Subsequent fragrances under the Versace name include 1990's Versus for Men cologne, Blonde - which was launched in 1995, The Dreamer (the final fragrance to launch during Gianni's lifetime), 2003's Versace Man, Glam and Crystal Noir - which was a perfume industry blockbuster - in 2004. Versace Man Eau Fraiche and Bright Crystal perfumes were launched in 2005. In 2007, the company launched its latest fragrance creation, Versace by Versace.He merged the worlds of fashion and entertainment. His lavish shows were pop-culture events, and he drew inspiration from contemporary street life, and films as well as art and design history.</div>
             <div className='flex flex-wrap'>
             {Users.map((e)=>{
        return (

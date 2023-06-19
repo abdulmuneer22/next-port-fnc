@@ -18,6 +18,7 @@ module.exports = {
       },
       colors: {
         'p': "#943579",
+        'pDark': "#522555",
         'p-': "#522555",
       },
       fontSize: {
